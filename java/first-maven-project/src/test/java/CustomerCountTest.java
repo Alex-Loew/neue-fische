@@ -27,4 +27,15 @@ class CustomerCountTest {
         assertEquals("Zu viele Personen", custCounter);
     }
 
+    @Test
+    @DisplayName("Testfall 1 = Alarmstufe rot")
+    public void test_alarm_1(){
+        //given
+        String anzahl="rot";
+        //when
+        int alarmstufe = CustomerCount.alarm(anzahl);
+        //then
+        assertEquals(0,alarmstufe);
+    }
+
 }

@@ -13,4 +13,19 @@ public class CustomerCount {
         }
         return costumerCount;
     }
+//werde ich nochmal neu und ausführlicher schreiben
+    public static int alarm(String stufe){
+        String ausgabe;
+        switch (stufe){
+            case "rot":
+                return 0;
+            case "gelb":
+                return 30;
+            case "grün":
+                return 60;
+            default:
+                System.out.println("Ungültige Eingabe");
+                return 0;
+        }
+    }
 }
