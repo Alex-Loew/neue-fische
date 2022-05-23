@@ -1,3 +1,4 @@
+import model.Student;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,7 +10,7 @@ class AufgabenKlassen1Test {
     void GetterSetterName(){
 
         //given
-        Student student1 = new Student();
+        Student student1 = new Student("Hans",1,true);
         String expected = "Willi";
 
         //when
@@ -24,7 +25,7 @@ class AufgabenKlassen1Test {
     void GetterSetterSemesterCount(){
 
         //given
-        Student student1 = new Student();
+        Student student1 = new Student("Hans",1,true);
         int expected = 1;
 
         //when
@@ -39,7 +40,7 @@ class AufgabenKlassen1Test {
     void GetterSetterActive(){
 
         //given
-        Student student1 = new Student();
+        Student student1 = new Student("Hans",1,true);
         boolean expected = true;
 
         //when
